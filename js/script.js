@@ -29,14 +29,24 @@ $(function(){
     Progress Bars
   ----------------------------------- */
 $(function() {
-  $(".progress-bar").each(function() {
-    
-    $(this).animate({width: $(this).attr("aria-valuenow") + '%'}, 1000);
+  $('#progress-elements').waypoint(function() {
+    $(".progress-bar").each(function() {
+      $(this).animate({width: $(this).attr("aria-valuenow") + '%'}, 1000);
+    });
+    this.destroy();
+  }, {
+    offset: 'bottom-in-view'
   });
 });
 
+/* ----------------------------------
+    Responsive Tabs
+  ----------------------------------- */
 
-
-
+$(function() {
+  $("#services-tabs").responsiveTabs({
+    animation: 'slide'
+  });
+});
 
 
