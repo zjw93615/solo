@@ -50,3 +50,41 @@ $(function() {
 });
 
 
+/* ----------------------------------
+    Portfolio
+  ----------------------------------- */
+
+$(window).on('load', function() {
+  // init Isotope
+  var $grid = $('#isotope-container').isotope({
+    // options
+  });
+  
+  $('#isotope-filters').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+    $('#isotope-filters').find('.active').removeClass('active');
+    $(this).addClass('active');
+  });
+});
+
+/* ----------------------------------
+    Magnifier
+  ----------------------------------- */
+
+$(function() {
+  $('#portfolio-wrapper').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+    // other options
+  });
+});
+
+
+
+
+
+
