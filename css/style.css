@@ -84,6 +84,7 @@ section {
   position: fixed;
   top: 50%;
   left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   min-height: 100%;
   min-width: 100%;
@@ -147,6 +148,7 @@ section {
   text-transform: uppercase;
   margin: 0 6px;
   padding: 12px 46px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -192,8 +194,15 @@ section {
   border: 1px solid #212226;
 }
 
-
-
+.btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 3px 15px;
+  border-radius: 4ps;
+  font-size: 22px;
+  display: none;
+}
 
 
 /*-------------------------------------
@@ -211,6 +220,7 @@ section {
   text-align: center;
   margin-left: -16px;
   z-index: 1;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -248,6 +258,7 @@ section {
   text-transform: uppercase;
   word-spacing: 9px;
   display: inline-block;
+  -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   position: relative;
   top: 60px;
@@ -314,6 +325,7 @@ section {
 .about-item {
   background-color: #fff;
   padding: 80px 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -354,6 +366,7 @@ section {
 }
 
 .about-item:hover i {
+  -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
 }
 
@@ -362,6 +375,7 @@ section {
 .about-item h3,
 .about-item p,
 .about-item hr {
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
@@ -387,6 +401,7 @@ section {
   height: 100%;
   overflow: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
 }
 
@@ -432,6 +447,7 @@ ul.social-list li a {
   line-height: 35px;
   color: #fff;
   border-radius: 50%;
+  -webkit-transition: background 0.4s linear;
   transition: background 0.4s linear;
 }
 
@@ -560,11 +576,13 @@ ul.social-list li:nth-child(3) a:hover {
 .service .icon {
   font-size: 42px;
   margin: 0;
+  -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
 .service:hover .icon {
   color: #f4c613;
+  -webkit-transform: translateX(-20px);
   transform: translateX(-20px);
 }
 
@@ -614,6 +632,7 @@ ul.social-list li:nth-child(3) a:hover {
   padding: 0;
   text-decoration: none;
   border-bottom: 3px solid transparent;
+  -webkit-transition: border-bottom 300ms linear;
   transition: border-bottom 300ms linear;
 }
 
@@ -689,6 +708,7 @@ ul.social-list li:nth-child(3) a:hover {
   font-weight: 700;
   text-transform: uppercase;
   background: transparent;
+  -webkit-box-shadow: none;
   box-shadow: none;
   padding-right: 35px;
   outline: 0;
@@ -698,6 +718,7 @@ ul.social-list li:nth-child(3) a:hover {
   display: block;
   padding-bottom: 5px;
   border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -711,10 +732,14 @@ ul.social-list li:nth-child(3) a:hover {
 .portfolio-item img {
   width: 100%;
   height: auto;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .portfolio-item:hover img {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -725,8 +750,10 @@ ul.social-list li:nth-child(3) a:hover {
   left: 0;
   right: 0;
   background-color: rgba(14, 14, 17, 0.9);
+  cursor: -webkit-zoom-in;
   cursor: zoom-in;
   opacity: 0;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
@@ -735,6 +762,7 @@ ul.social-list li:nth-child(3) a:hover {
   top: 50%;
   left: 0;
   width: 100%;
+  -webkit-transform:  translateY(-50%);
   transform:  translateY(-50%);
 }
 
@@ -744,7 +772,9 @@ ul.social-list li:nth-child(3) a:hover {
   font-size: 30px;
   margin: 0;
   padding: 0;
+  -webkit-transform: translateY(-20%);
   transform: translateY(-20%);
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -763,15 +793,19 @@ ul.social-list li:nth-child(3) a:hover {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  -webkit-transform: translateY(20%);
   transform: translateY(20%);
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .portfolio-item:hover .portfolio-item-details h3 {
+  -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
 .portfolio-item:hover .portfolio-item-details p {
+  -webkit-transform: translateY(0);
   transform: translateY(0);
 }
 
@@ -840,9 +874,11 @@ ul.social-list li:nth-child(3) a:hover {
   ------------------------------------- */
 
 .pricing-table {
+  -webkit-box-shadow: 0 0 105px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 105px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   padding: 32px 21px;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
@@ -981,6 +1017,7 @@ ul.social-list li:nth-child(3) a:hover {
   border-radius: 4px;
   min-height: 170px;
   padding: 45px 50px;
+  -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
@@ -988,6 +1025,7 @@ ul.social-list li:nth-child(3) a:hover {
   font-size: 42px;
   color: #f4c613;
   margin: 0 0 6px 0;
+  -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
@@ -1007,6 +1045,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .stats-item:hover i {
+  -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
   color: #212226;
 }
@@ -1053,6 +1092,7 @@ ul.social-list li:nth-child(3) a:hover {
 .blog-post {
   background: #fff;
   padding: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
 }
@@ -1077,6 +1117,7 @@ ul.social-list li:nth-child(3) a:hover {
   font-size: 12px;
   font-weight: 500px;
   text-decoration: none;
+  -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
 
@@ -1116,6 +1157,8 @@ ul.office-details {
 ul.office-details li {
   font-family: "Open Sans", sans-serif;
   margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1139,6 +1182,7 @@ ul.office-details li i {
 
 #contact-right {
   padding: 25px 30px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
@@ -1179,3 +1223,64 @@ footer p {
 footer p span {
   color: #f4c613;
 }
+
+/*-------------------------------------
+    Navigation
+  ------------------------------------- */
+
+.navbar {
+  padding: 35px 0 20px 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.site-nav-wrapper {
+  padding: 0 85px;;
+}
+
+.navbar-brand {
+  padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+  background: none;
+  color: #f4c613;
+}
+
+.white-nav-top {
+  background: #fff;
+  padding: 10px 0;
+  -webkit-box-shadow: 0 8px 6px -9px #999;
+  box-shadow: 0 8px 6px -9px #999;
+  z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+  color: #212226;
+}
+
+.white-nav-top ul.navbar-nav > li > a:hover {
+  background: none;
+  color: #f4c613;
+}
+
+/* Scroll spy active state */
+.white-nav-top ul.navbar-nav > li.active > a {
+  color: #f4c613;
+  font-weight: 500;
+}
+
+
+
+
+
