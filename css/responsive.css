@@ -1,4 +1,90 @@
 /*-------------------------------------
+    Mobile Menu
+  ------------------------------------- */
+.navbar-header {
+  position: relative;
+}
+
+
+
+#mobile-nav-open-btn {
+  font-size: 30px;
+  color: #f4c613;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  /* hide */
+  display: none;
+}
+
+#mobile-nav {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#mobile-nav-close-btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 70px;
+  color: #212226;
+  font-weight: 400;
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+  right: 13px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#mobile-nav-content {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+  top: 10%;
+}
+
+#mobile-nav ul li {
+  margin-bottom: 20px;
+}
+
+#mobile-nav a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #212226;
+  text-transform: uppercase;
+  display: inline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav-close-btn:hover {
+  color: #f4c613;
+  background: none;
+}
+
+#mobile-nav a:focus,
+#mobile-nav-close-btn:focus {
+  background: none;
+}
+
+.white-nav-top #mobile-nav ul.nav > li.active > a {
+  color: #f4c613;
+  font-weight: 500;
+}
+
+
+/*-------------------------------------
     Bootstrap 3 Media Queries
   ------------------------------------- */
 
@@ -119,6 +205,20 @@
 
 /* Extra Small Devices */
 @media (max-width: 767px) {
+  
+  /* Navigation */
+  .navbar {
+    padding: 20px 0;
+  }
+  
+  .site-nav-wrapper,
+  .white-nav-top {
+    padding: 0;
+  }
+  
+  #mobile-nav-open-btn {
+    display: block;
+  }
   
   /* Home */
   #home-heading h1 {

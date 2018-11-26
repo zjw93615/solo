@@ -1280,7 +1280,17 @@ ul.navbar-nav > li > a:focus {
   font-weight: 500;
 }
 
-
-
-
+/*-------------------------------------
+    Animation
+  ------------------------------------- */
+#home-heading-1,
+#home-heading-2,
+#home-text,
+#home-btn,
+#arrow-down i {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
 

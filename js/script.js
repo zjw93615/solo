@@ -188,6 +188,37 @@ $(function() {
   });
 })
 
+/* ----------------------------------
+    Mobile Menu
+  ----------------------------------- */
+$(function() {
+  $('#mobile-nav-open-btn').click(function() {
+    $('#mobile-nav').css('height', '100%');
+  });
+  
+  $('#mobile-nav-close-btn, #mobile-nav a').click(function() {
+    $('#mobile-nav').css('height', '0%');
+  });
+});
+
+/* ----------------------------------
+    Wow Animation
+  ----------------------------------- */
+$(function() {
+  new WOW().init();
+});
+
+$(window).on('load', function() {
+  $("#home-heading-1").addClass("animated fadeInDown");
+  $("#home-heading-2").addClass("animated fadeInDown");
+  $("#home-text").addClass("animated fadeInDown");
+  $("#home-btn").addClass("animated fadeInDown");
+  $("#arrow-down i").addClass("animated fadeInDown infinite");
+});
+
+
+
+
 
 
 
