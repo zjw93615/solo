@@ -117,6 +117,11 @@
   .service-tab p {
 /*    line-height: 20px;*/
   }
+  
+  /* Team */
+  .team-member-info {
+    padding: 60px 0;
+  }
 }
 
 /* Small Devices */
@@ -143,6 +148,11 @@
   /* Generic */
   .vertical-heading h2 {
     font-size: 29px;
+  }
+  
+  /* Team */
+  .team-member-info {
+    padding: 30px 0;
   }
   
   /* Tech Statement */

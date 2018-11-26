@@ -750,8 +750,7 @@ ul.social-list li:nth-child(3) a:hover {
   left: 0;
   right: 0;
   background-color: rgba(14, 14, 17, 0.9);
-  cursor: -webkit-zoom-in;
-  cursor: zoom-in;
+  cursor: pointer;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
