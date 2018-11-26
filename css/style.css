@@ -199,7 +199,7 @@ section {
   bottom: 20px;
   right: 20px;
   padding: 3px 15px;
-  border-radius: 4ps;
+  border-radius: 4px;
   font-size: 22px;
   display: none;
 }
@@ -671,7 +671,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .service-tab p {
-  line-height: 24ps;
+  line-height: 24px;
   margin-bottom: 30px;
 }
 
@@ -1104,7 +1104,7 @@ ul.social-list li:nth-child(3) a:hover {
 .blog-post > p {
   line-height: 24px;
   margin: 0;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
 .blog-post a {
@@ -1114,7 +1114,7 @@ ul.social-list li:nth-child(3) a:hover {
   font-family: "Raleway", sans-serif;
   color: #f4c613;
   font-size: 12px;
-  font-weight: 500px;
+  font-weight: 500;
   text-decoration: none;
   -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
@@ -1133,7 +1133,7 @@ ul.social-list li:nth-child(3) a:hover {
 .blog-post .post-meta p {
   font-size: 11px;
   font-family: "Raleway", sans-serif;
-  line-height: 24ps;
+  line-height: 24px;
   font-weight: 500;
   margin: 0;
 }
